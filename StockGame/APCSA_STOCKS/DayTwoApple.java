@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DayTwoApple here.
+ * class DayTwoApple instantiates object or displays message according to user selection
  * 
  * @author (your name) 
- * @version (a version number or a date)
+ * @version 11292020
  */
 public class DayTwoApple extends World
 {
@@ -22,10 +22,12 @@ public class DayTwoApple extends World
     {
         Greenfoot.delay(300);
         String q=Greenfoot.ask("Please enter the word next to continue!");
+        // selection 'next' instantiates object DayThreeApple
         if (q.contains("next"))
         {
             Greenfoot.setWorld(new DayThreeApple());
         }
+        //Displays message when 'next' is not typed
         else 
         {
           q=Greenfoot.ask("Please restart the program and enter you answer carefully next time"); 

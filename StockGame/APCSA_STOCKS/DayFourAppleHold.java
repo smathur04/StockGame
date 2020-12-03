@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DayFourAppleHold here.
+ * class DayFourAppleHold instantiates an object based on user input.
  * 
  * @author (your name) 
- * @version (a version number or a date)
+ * @version 11292020
  */
 public class DayFourAppleHold extends World
 {
@@ -21,6 +21,7 @@ public class DayFourAppleHold extends World
     public void act()
     {
         Greenfoot.delay(10);
+        //Selection "1" instantiates object ResultApple
         if (Greenfoot.isKeyDown("1"))
         {
             Greenfoot.setWorld(new ResultApple());

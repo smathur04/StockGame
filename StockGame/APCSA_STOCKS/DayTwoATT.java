@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DayTwoATT here.
+ * class DayTwoATT instantiates object based on user input..
  * 
  * @author (your name) 
- * @version (a version number or a date)
+ * @version 11292020
  */
 public class DayTwoATT extends World
 {
@@ -22,6 +22,7 @@ public class DayTwoATT extends World
     {
         Greenfoot.delay(300);
         String q=Greenfoot.ask("Please enter the word next to continue!");
+        // user input "next" instantiates object DayThreeATT
         if (q.contains("next"))
         {
             Greenfoot.setWorld(new DayThreeATT());

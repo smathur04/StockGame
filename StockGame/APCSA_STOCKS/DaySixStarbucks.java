@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DaySixStarbucks here.
+ * class DaySixStarbucks instantiates object based on user input.
  * 
  * @author (your name) 
- * @version (a version number or a date)
+ * @version 11292020
  */
 public class DaySixStarbucks extends World
 {
@@ -21,6 +21,7 @@ public class DaySixStarbucks extends World
     public void act()
     {
         Greenfoot.delay(10);
+        //Selection "1" instantiates object ResultStarbucksATT
         if (Greenfoot.isKeyDown("1"))
         {
             Greenfoot.setWorld(new ResultStarbucksATT());

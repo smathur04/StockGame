@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DayOne here.
+ * class DayOne allows user to select/buy one of the given stock options and instantiates object according to user selection
  * 
  * @author (your name) 
- * @version (a version number or a date)
+ * @version 11292020
  */
 public class DayOne extends World
 {
@@ -20,17 +20,21 @@ public class DayOne extends World
     }
     public void act()
     {
+        //Displays the message based on user input reponse
         Greenfoot.delay(10);
+        //Displays message when 'enter' key is pressed
         if (Greenfoot.isKeyDown("enter"))
         {
             System.out.println("IMPORTANT TIPS:");
             System.out.println("Stocks that have been trending down for a long time are likely to shoot back up!");
             System.out.println("Stocks that have been trending up for a long time are likely to shoot back down!");
         }
+        // Instantiates DayTwoApple object when "1" is selected
         else if (Greenfoot.isKeyDown("1"))
         {
             Greenfoot.setWorld(new DayTwoApple());
         }
+        //Instantiates DayTwoATT object when "2" is selected
         else if (Greenfoot.isKeyDown("2"))
         {
             Greenfoot.setWorld(new DayTwoATT());

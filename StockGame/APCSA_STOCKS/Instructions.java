@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Instructions here.
+ *  class Instructions instantiates an object of DayOne class based on user response
  * 
  * @author (your name) 
- * @version (a version number or a date)
+ * @version 11292020
  */
 public class Instructions extends World
 {
@@ -20,6 +20,7 @@ public class Instructions extends World
     }
     public void act()
     {
+        // Create a new DayOne when Enter key is pressed
         if (Greenfoot.isKeyDown("enter"))
         {
             Greenfoot.setWorld(new DayOne());

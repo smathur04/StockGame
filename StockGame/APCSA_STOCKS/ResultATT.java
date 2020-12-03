@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ResultATT here.
+ * class ResultATT instantiates an object based on user response.
  * 
  * @author (your name) 
- * @version (a version number or a date)
+ * @version 11292020
  */
 public class ResultATT extends World
 {
@@ -21,6 +21,7 @@ public class ResultATT extends World
     public void act()
     {
         Greenfoot.delay(10);
+        //Instantiate Review object when 'enter' key is pressed
         if (Greenfoot.isKeyDown("enter"))
         {
             Greenfoot.setWorld(new Review());

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * MyWorld class directs the user based on their response 
  * 
  * @author (your name) 
- * @version (a version number or a date)
+ * @version 11292020
  */
 public class MyWorld extends World
 {
@@ -20,6 +20,7 @@ public class MyWorld extends World
     }
     public void act()
     {
+        //Interact with the user and based on the user response, display the message/instantiate an object of class Instructions
         Greenfoot.delay(100);
         String q=Greenfoot.ask("Are you ready to start (yes/no)");
         if (q.contains("yes"))

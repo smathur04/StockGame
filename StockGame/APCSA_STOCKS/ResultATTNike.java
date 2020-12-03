@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ResultATTNike here.
+ * class ResultATTNike instantiates object based on user input.
  * 
  * @author (your name) 
- * @version (a version number or a date)
+ * @version 11292020
  */
 public class ResultATTNike extends World
 {
@@ -21,6 +21,7 @@ public class ResultATTNike extends World
     public void act()
     {
         Greenfoot.delay(10);
+        //Instantiate Review object when 'enter' key is pressed
         if (Greenfoot.isKeyDown("enter"))
         {
             Greenfoot.setWorld(new Review());

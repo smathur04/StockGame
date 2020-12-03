@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DayFiveNikeATT here.
+ * class DayFiveNikeATT instantiates object or displays message based on user input.
  * 
  * @author (your name) 
- * @version (a version number or a date)
+ * @version 11292020
  */
 public class DayFiveNikeATT extends World
 {
@@ -21,6 +21,7 @@ public class DayFiveNikeATT extends World
     public void act()
     {
         Greenfoot.delay(10);
+        //Message is displyed when 'enter' key is pressed
         if (Greenfoot.isKeyDown("enter"))
         {
             System.out.println("IMPORTANT TIPS:");
@@ -32,6 +33,7 @@ public class DayFiveNikeATT extends World
         {
             
         }
+        //Selection "2" instantiates object DaySixNike
         else if (Greenfoot.isKeyDown("2"))
         {
             Greenfoot.setWorld(new DaySixNike());

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DaySixNike here.
+ * class DaySixNike instantiates object based on user input.
  * 
  * @author (your name) 
- * @version (a version number or a date)
+ * @version 11292020
  */
 public class DaySixNike extends World
 {
@@ -21,6 +21,7 @@ public class DaySixNike extends World
     public void act()
     {
         Greenfoot.delay(10);
+        //Selection "1" instantiates object ResultATTNike
         if (Greenfoot.isKeyDown("1"))
         {
             Greenfoot.setWorld(new ResultATTNike());
